@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Doctor Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+
+        .doctor-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Book Doctor Appointment</h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="name">Patient Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Contact Number:</label>
+                <input type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" required>
+                    <option value="">Choose a doctor</option>
+                    <option value="dr_smith">Dr. Sarah Smith (Cardiologist)</option>
+                    <option value="dr_john">Dr. Michael John (Dermatologist)</option>
+                    <option value="dr_patel">Dr. Anika Patel (Pediatrician)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Appointment Date:</label>
+                <input type="date" id="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="symptoms">Symptoms:</label>
+                <textarea id="symptoms" rows="4" placeholder="Briefly describe your symptoms"></textarea>
+            </div>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</body>
+</html>
